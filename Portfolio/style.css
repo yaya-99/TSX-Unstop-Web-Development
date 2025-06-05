@@ -1,26 +1,31 @@
-/* General */
+/* General Layout */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background: hsl(204, 26%, 96%);
-  color: #333333;
+  color: #333;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Header and Nav */
+/* Header */
 header {
   background-color: #56a4f3;
   color: white;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
 }
 
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Navigation */
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 10px 0 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -32,30 +37,35 @@ nav ul li a {
   text-decoration: none;
   color: #ecf0f1;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #141516;
 }
 
-/* Main & Article */
+/* Main & Article Styling */
 main {
-  padding: 30px 20px;
-  max-width: 800px;
-  margin: auto;
   flex: 1;
+  padding: 40px 20px;
 }
 
 article {
   background: rgb(164, 218, 247);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 article h2 {
-  margin-top: 10px;
   color: #040607;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+article p {
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 /* Footer */
@@ -65,4 +75,17 @@ footer {
   background-color: #56a4f3;
   color: white;
   margin-top: auto;
+}
+
+/* Custom Button Enhancement */
+button.btn {
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
